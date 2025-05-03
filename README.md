@@ -33,7 +33,8 @@ DietMitra is an AI-driven web application that generates personalized meal plans
 - **Streamlit** – Frontend user interface  
 - **Pandas** – Data manipulation and filtering  
 - **Meta-Llama-3-70B** – AI text generation for meal names/descriptions  
-- **Gemini API (Google)** – For AI integration  
+- **Gemini API (Google)** – For AI integration   Gemini API (1.5 Flash)
+
 - **Streamlit Cloud** – Hosting platform  
 
 ---
