@@ -47,3 +47,17 @@ To protect your API key, use Streamlit's secrets management:
 2. Add your API key:
    ```toml
    openai_apikey = "YOUR_ACTUAL_API_KEY"
+
+## 🛠️ Setup Instructions
+
+### 1. Create and activate virtual environment
+
+```bash
+# For Windows
+python -m venv .venv
+.venv\Scripts\activate
+
+# For macOS/Linux
+python3 -m venv .venv
+source .venv/bin/activate
+
