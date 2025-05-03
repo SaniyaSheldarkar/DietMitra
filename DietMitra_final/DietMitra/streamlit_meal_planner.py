@@ -24,7 +24,7 @@ if 'packages_installed' not in st.session_state:
 
 
 GEMINI_API_KEY = st.secrets["gemini_apikey"]
-ANTHROPIC_API_KEY = st.secrets["anthropic_apikey"]
+
 
 # Configure the Gemini API
 genai.configure(api_key=GEMINI_API_KEY)
