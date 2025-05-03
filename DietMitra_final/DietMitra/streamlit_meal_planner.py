@@ -23,6 +23,9 @@ if 'packages_installed' not in st.session_state:
 
 
 
+# Get the key from secrets
+ANTHROPIC_API_KEY = st.secrets["anthropic_apikey"]
+
 GEMINI_API_KEY = st.secrets["gemini_apikey"]
 
 
