@@ -6,33 +6,33 @@
 
 ## 🚀 Features
 
-* 🔢 **Calorie Calculation**
+* 🔢 **Calorie Calculation**  
   Automatically calculates daily calorie requirements based on user input like age, weight, height, and gender.
 
-* 🥘 **Customized Meal Plans**
+* 🥘 **Customized Meal Plans**  
   Generates balanced meal plans for breakfast, lunch, and dinner using selected food categories and preferences.
 
-* 🚫 **Food Restrictions**
+* 🚫 **Food Restrictions**  
   Users can specify allergies or dietary restrictions to avoid certain ingredients.
 
-* 🤖 **AI-Powered Creativity**
+* 🤖 **AI-Powered Creativity**  
   Uses **Meta-Llama-3-70B** to create unique and engaging meal names and descriptions.
 
-* 🖥️ **Interactive Streamlit UI**
+* 🖥️ **Interactive Streamlit UI**  
   Built with **Streamlit** for real-time interactivity and a clean interface.
 
-* 📊 **Efficient Data Management**
+* 📊 **Efficient Data Management**  
   Handles food data and processing using **Pandas**.
 
 ---
 
 ## 🛠 Tech Stack
 
-* **Python** – Core application logic
-* **Streamlit** – Frontend user interface
-* **Pandas** – Data manipulation and filtering
-* **Meta-Llama-3-70B** – AI text generation
-* **Gemini API (Google)** – AI integration (Gemini 1.5 Flash)
+* **Python** – Core application logic  
+* **Streamlit** – Frontend user interface  
+* **Pandas** – Data manipulation and filtering  
+* **Meta-Llama-3-70B** – AI text generation  
+* **Gemini API (Google)** – AI integration (Gemini 1.5 Flash)  
 * **Streamlit Cloud** – Hosting platform
 
 ---
@@ -41,33 +41,47 @@
 
 To protect your API key, use Streamlit's secrets management:
 
-1. Create a `.streamlit/secrets.toml` file in the root of your project.
+1. Create a `.streamlit/secrets.toml` file in the root of your project.  
 2. Add your API key:
 
    ```toml
    openai_apikey = "YOUR_ACTUAL_API_KEY"
    gemini_apikey = "YOUR_ACTUAL_GEMINI_KEY"
-   ```
 
----
-
-## 🛠️ Setup Instructions
-
-### 1. Create and activate virtual environment
-
-```bash
-# For Windows
+🛠️ Setup Instructions
+1. Create and activate virtual environment
+   # For Windows
 python -m venv .venv
 .venv\Scripts\activate
 
 # For macOS/Linux
 python3 -m venv .venv
 source .venv/bin/activate
-```
 
----
 
-## 🌐 Live Demo
+🌐 Live Demo
+🚀 Access the Streamlit App Here
 
-🚀 [**Access the Streamlit App Here**](https://dietmitra-bysaniya.streamlit.app/)
+🐳 Run with Docker
+You can run DietMitra in a Docker container with just a few commands.
 
+📦 1. Build the Docker image
+docker build -t dietmitra-app .
+
+🚀 2. Run the Docker container
+docker run -p 8501:8501 dietmitra-app
+
+
+🌐 3. Open the app in your browser
+Go to: http://localhost:8501
+
+🧪 Note
+To use your API keys inside Docker:
+
+Ensure you have a .streamlit/secrets.toml file before building the Docker image.
+
+Make sure it’s included in the Docker context.
+
+Or mount the secrets directory at runtime:
+
+docker run -p 8501:8501 -v $(pwd)/.streamlit:/app/.streamlit dietmitra-app
