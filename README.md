@@ -32,7 +32,7 @@
 * **Streamlit** – Frontend user interface  
 * **Pandas** – Data manipulation and filtering  
 * **Meta-Llama-3-70B** – AI text generation  
-* **Gemini API (Google)** – AI integration (Gemini 1.5 Flash)  
+* **Gemini API (Google)** – AI integration (Gemini 1.5 Flash)
 * **Streamlit Cloud** – Hosting platform
 
 ---
