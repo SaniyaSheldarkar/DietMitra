@@ -60,6 +60,7 @@ source .venv/bin/activate
 
 
 🌐 Live Demo
+https://dietmitra-bysaniya.streamlit.app/
 🚀 Access the Streamlit App Here
 
 🐳 Run with Docker
